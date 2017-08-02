@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <title>Sound</title>
+    <title>Test</title>
 </head>
 <body>
-<app></app>
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" ui-sref="mainTable">Main<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+            <!--Место для вашей рекламы-->
+            <app></app>
+    </div>
+</div>
+
 <script src="assets/bundle.js"></script>
 </body>
 </html>

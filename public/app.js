@@ -2,14 +2,16 @@ import 'jquery';
 import 'jquery-ui';
 import angular from'angular';
 import uiRouter from 'angular-ui-router';
-import home from './components/home';
+import client from './components/client';
+import mainTable from './components/mainTable';
 import '../node_modules/bootstrap/less/bootstrap.less';
 import 'bootstrap';
 
 angular
     .module('myApp', [
         uiRouter,
-        home,
+        mainTable,
+        client
         ])
     .directive('app', function () {
         return {
@@ -18,7 +20,7 @@ angular
         }
     })
     .config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/mainTable');
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = true;
     })
