@@ -1,3 +1,20 @@
-<table class="table table-bordered">
-   <tr client clients="clients"></tr>
+    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <td>Client ID</td>
+        <td>Credit Card ID</td>
+        <td>Month</td>
+        <td>Timestamp</td>
+        <td>Transaction Type</td>
+        <td>Amount</td>
+    </tr>
+    </thead>
+    <tr ng-repeat="row in vm.rows">
+        <td>{{row.clientId}}</td>
+        <td>{{row.creditCardId}}</td>
+        <td>{{row.month}}</td>
+        <td>{{row.transaction.timeStamp | date:"medium"}}</td>
+        <td>{{row.transaction.type}}</td>
+        <td>{{row.transaction.amount}}</td>
+    </tr>
 </table>

@@ -2,8 +2,8 @@ import 'jquery';
 import 'jquery-ui';
 import angular from'angular';
 import uiRouter from 'angular-ui-router';
-import client from './components/client';
 import mainTable from './components/mainTable';
+import file from './components/file';
 import '../node_modules/bootstrap/less/bootstrap.less';
 import 'bootstrap';
 
@@ -11,7 +11,7 @@ angular
     .module('myApp', [
         uiRouter,
         mainTable,
-        client
+        file
         ])
     .directive('app', function () {
         return {
